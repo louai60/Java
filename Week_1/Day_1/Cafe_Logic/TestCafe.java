@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class TestCafe {
     public static void main(String[] args) {
-        // Create an instance of CafeUtil
         CafeUtil cafeUtil = new CafeUtil();
 
         /* ============ App Test Cases ============= */
@@ -32,6 +31,11 @@ public class TestCafe {
             cafeUtil.addCustomer(customers);
             System.out.println("\n");
         }
+
+        System.out.println("\n ----- Display Customer Test ------");
+        
+
+        
     }
 }
 
