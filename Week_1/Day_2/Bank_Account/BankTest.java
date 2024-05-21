@@ -26,4 +26,6 @@ public class BankTest {
         System.out.println("Number of bank accounts: " + BankAccount.getAccounts());
         System.out.println("Total money in all accounts: " + BankAccount.getTotalMoney());
     }
+
+    
 }
