@@ -1,10 +1,10 @@
-package com.louaysaafi.Hopper;
+package com.louaysaafi.Hopper_Receipt;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HopperApplicationTests {
+class HopperReceiptApplicationTests {
 
 	@Test
 	void contextLoads() {

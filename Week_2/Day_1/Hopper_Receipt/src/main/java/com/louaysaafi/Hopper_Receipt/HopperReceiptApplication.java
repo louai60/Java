@@ -1,13 +1,13 @@
-package com.louaysaafi.Hopper;
+package com.louaysaafi.Hopper_Receipt;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HopperApplication {
+public class HopperReceiptApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HopperApplication.class, args);
+		SpringApplication.run(HopperReceiptApplication.class, args);
 	}
 
 }
