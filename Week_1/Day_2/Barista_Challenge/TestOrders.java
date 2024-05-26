@@ -37,10 +37,10 @@ public class TestOrders {
         order1.setReady(true);
         order3.setReady(true);
 
-        System.out.println(order1.getStatusMessage()); 
-        System.out.println(order2.getStatusMessage()); 
-        System.out.println(order3.getStatusMessage()); 
-        System.out.println(order4.getStatusMessage()); 
+        System.out.println(order1.getStatusMessage());
+        System.out.println(order2.getStatusMessage());
+        System.out.println(order3.getStatusMessage());
+        System.out.println(order4.getStatusMessage());
         System.out.println(order5.getStatusMessage());
 
         // Test getOrderTotal method

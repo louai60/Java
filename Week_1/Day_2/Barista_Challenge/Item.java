@@ -4,6 +4,7 @@ public class Item {
     // MEMBER VARIABLES
     private String name;
     private double price;
+    private int index; // New member variable
 
     // CONSTRUCTOR
     public Item(String name, double price) {
@@ -27,5 +28,12 @@ public class Item {
     public void setPrice(double price) {
         this.price = price;
     }
-}
 
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
+}

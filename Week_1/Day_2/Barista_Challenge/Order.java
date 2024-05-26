@@ -48,7 +48,6 @@ public class Order {
     }
 
     // ORDER METHODS
-
     public void addItem(Item item) {
         this.items.add(item);
     }
