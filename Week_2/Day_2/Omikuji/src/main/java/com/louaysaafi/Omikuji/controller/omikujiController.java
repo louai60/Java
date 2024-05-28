@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-public class omikujiController {
+public class OmikujiController {
 
     @GetMapping("/omikuji")
     public String omikujiForm() {
@@ -18,7 +18,7 @@ public class omikujiController {
     @PostMapping("/omikuji/submit")
     public String processOmikujiForm(HttpServletRequest request, HttpSession session) {
         String question = request.getParameter("question");
-        String fortune = generateFortune(); // You need to implement this method
+        String fortune = generateFortune();
         session.setAttribute("question", question);
         session.setAttribute("fortune", fortune);
         return "redirect:/omikuji/show";
