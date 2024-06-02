@@ -1,6 +1,7 @@
 package com.louaysaafi.auth.models;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Size;
 
 import java.util.Date;
 import java.util.List;
@@ -13,11 +14,14 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    // NEW
+    @Size(min=3, message="Username must be greater than 3 characters")
     private String username;
+    // NEW
+    @Size(min=5, message="Password must be greater than 5 characters")
     private String password;
     @Transient
     private String passwordConfirmation;
-    @Column(updatable=false)
     private Date createdAt;
     private Date updatedAt;
     @ManyToMany(fetch = FetchType.EAGER)
@@ -25,7 +29,7 @@ public class User {
             name = "users_roles",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id"))
-    private List<com.louaysaafi.auth.models.Role> roles;
+    private List <Role> roles;
 
     public User() {
     }
